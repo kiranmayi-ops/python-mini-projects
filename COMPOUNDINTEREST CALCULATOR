@@ -1,0 +1,17 @@
+principle=0
+time=0
+rate=0
+while principle<=0:
+    principle=float(input("Enter principle amount: "))
+    if principle<=0:
+        print("Principle amount cannot be negative or zero")
+while time<=0:
+    time=int(input("Enter number of years: "))
+    if time<=0:
+        print("Time cannot be negative or zero")
+while rate<=0:
+    rate=int(input("Enter the interest rate: "))
+    if time<=0:
+        print("rate cannot be negative or zero")
+total=principle*pow((1+rate/100),time)
+print(total)
